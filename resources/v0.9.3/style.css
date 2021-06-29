@@ -244,6 +244,15 @@ p.partage {
     font: inherit;
 }
 
+#footer {
+    bottom: 10px;
+    position: absolute;
+    text-align: center;
+    font-size: medium;
+    opacity: 66%;
+    margin-left: calc((100% - 223px)/2);
+}
+
 @media (max-width: 500px) {
     #logo {
         height: 10vh;
