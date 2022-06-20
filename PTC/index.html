@@ -353,9 +353,14 @@ Developpeur : Baptiste Florentin, baptiste.florentin@edu.devinci.fr
                                           font-size: 12px !important;">
                                        Utiliser ma position actuelle</button></div>
                                             </div> </div>
+                                            <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+                                            <link rel="stylesheet" type="text/css" href="./style.css" />
+                                            <script type="text/javascript" src="resources/v0.9.3/livelocation.js"></script>
                                           <iframe style="margin-bottom:20px;display:none;"class="carte" id="maps"src=""></iframe>
-                                   <?php require ('current-location.php');?>
-                                   <button id="bouton_valider" id="submit" type="submit" class="cu-pos-btn">Valider</button>
+                                          <div id="map"></div>
+                                          <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                                          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi7TizVTLJIjkU7qWdzR7Z65mrsWYepyA&libraries=places&callback=initMap">
+                                        </script>                                   <button id="bouton_valider" id="submit" type="submit" class="cu-pos-btn">Valider</button>
                            </form>
 
          </div>
